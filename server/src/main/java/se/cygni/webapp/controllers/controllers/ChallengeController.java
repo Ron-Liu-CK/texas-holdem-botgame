@@ -1,19 +1,25 @@
 package se.cygni.webapp.controllers.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import se.cygni.texasholdem.table.GamePlan;
 
 import java.util.Locale;
 
 @Controller
-@RequestMapping(value = "/")
-public class HomeController {
+public class ChallengeController {
 
-    @RequestMapping(method = RequestMethod.GET)
+    @Autowired
+    GamePlan gamePlan;
+
+    @RequestMapping(value = "/challenge", method = RequestMethod.GET)
     public String home(Locale locale, Model model) {
 
-        return "redirect:/challenge";
+        model.addAttribute("gamePlan", gamePlan);
+
+        return "challenge";
     }
 }

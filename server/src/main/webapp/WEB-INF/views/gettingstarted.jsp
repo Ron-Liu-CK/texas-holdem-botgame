@@ -8,19 +8,33 @@
 
 <div class="container">
     <div class="hero-unit">
-        <h1>Getting started</h1>
-
-        <p>and code samples</p>
+        <h1>Poker Clients</h1>
     </div>
 
     <div class="row">
         <div class="span6">
             <div class="well well-large">
-                <h2>Getting started with a Java client</h2>
+                <h2>Java client</h2>
 
-                <p>Follow the commands below and you should be okay, see links below for
-                    further instructions if some <a href="#java_client_prereq">prerequisites</a> are missing.</p>
 
+                <a name="java_client_prereq"></a>
+                <h3>Prerequisites</h3>
+
+                <p>
+                    You need a Java JDK of version 6 or above: <a
+                        href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">download
+                    Java</a>
+                </p>
+
+                <p>
+                    You need to install Maven: <a href="http://maven.apache.org/download.html" target="_blank">download
+                    Maven</a> </br>
+                    Installation instructions: <a href="http://maven.apache.org/download.html#Installation" target="_blank">Maven
+                    installation</a>
+                </p>
+
+
+                <h3>Setting Up Instructions</h3>
                 <p>You need to have a sane Java environment, version 6 or above is okay:</p>
                 <pre class="prettyprint">
 > java -version
@@ -91,15 +105,23 @@ Caused by: java.lang.RuntimeException:
 
                 <p>Hint: The class se.cygni.texasholdem.player.FullyImplementedBot is an example bot that you can use as
                     a starting point.</p>
-
-
             </div>
         </div>
         <!--/span-->
 
         <div class="span6">
             <div class="well well-large">
-                <h2>Getting started with a node.js client</h2>
+                <h2>Node.js client</h2>
+
+                <a name="nodejs_client_prereq"></a>
+
+                <h3>Prerequisites</h3>
+
+                <p>
+                    Download and install node.js: <a href="http://nodejs.org/" target="_blank">node.js</a>
+                </p>
+
+                <h3>Setting Up Instructions</h3>
 
                 <p>The commands below illustrate how to run the example bot in node.js. See <a
                         href="#nodejs_client_prereq">prerequisites</a> if
@@ -133,83 +155,16 @@ Error: Did you forget to specify your name? A good idea is to use your e-mail as
 
                 <p>Hint: The file botplayer.js is an example bot that you can use as a starting point.</p>
             </div>
+
+            <div class="well well-large">
+                <h2>Additional Documentation</h2>
+                <Ul>
+                    <li><a href="http://poker.cygni.se/mavensite/texas-holdem-client/apidocs/">http://poker.cygni.se/mavensite/texas-holdem-client/apidocs/</a></li>
+                    <li><a href="http://poker.cygni.se/mavensite/texas-holdem-common/apidocs/">http://poker.cygni.se/mavensite/texas-holdem-common/apidocs/</a></li>
+                </Ul>
+            </div>
             <!--/span-->
         </div>
-
-        <div class="span6">
-            <div class="well well-large">
-                <h2>Documentation and links</h2>
-
-                <p>The Maven site for this project is here:
-                    <a href="/mavensite">Cygni Texas Hold'em Maven site</a>
-                </p>
-
-                <p>Download directory can be viewed here:
-                    <a href="/download">Downloads</a>
-                </p>
-
-                <p>Maven repo:
-                    <a href="/maven2">Cygni Texas Hold'em Maven repo</a>
-                </p>
-
-                <p>Add to your pom.xml to enable this repo:
-                <pre class="prettyprint">
-&lt;repositories&gt;
-    &lt;repository&gt;
-        &lt;id&gt;poker.cygni.se&lt;/id&gt;
-        &lt;url&gt;http://poker.cygni.se/maven2&lt;/url&gt;
-    &lt;/repository&gt;
-&lt;/repositories&gt;</pre>
-                </p>
-            </div>
-        </div>
-
-        <div class="span6">
-            <a name="java_client_prereq"></a>
-
-            <h2>Java prerequisites</h2>
-
-            <p>
-                You need a Java JDK of version 6 or above: <a
-                    href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">download
-                Java</a>
-            </p>
-
-            <p>
-                You need to install Maven: <a href="http://maven.apache.org/download.html" target="_blank">download
-                Maven</a> </br>
-                Installation instructions: <a href="http://maven.apache.org/download.html#Installation" target="_blank">Maven
-                installation</a>
-            </p>
-
-            <a name="nodejs_client_prereq"></a>
-
-            <h2>node.js prerequisites</h2>
-
-            <p>
-                Download and install node.js: <a href="http://nodejs.org/" target="_blank">node.js</a>
-            </p>
-
-            <a name="java_ide"></a>
-
-            <h2>IDE (Integated Development Environment)</h2>
-
-            <p>
-                At Cygni we mainly use Eclipse, IntelliJ or NetBeans but you may choose any development enviroment you
-                want. Here are a few suggestions:
-            </p>
-
-            <p>
-                <a href="http://www.eclipse.org/downloads/">Eclipse</a> (Also add the M2Eclipse plugin for Maven
-                support)</br>
-                <a href="http://www.jetbrains.com/idea/download/index.html">IntelliJ</a> (Out of the box support for
-                Maven)</br>
-                <a href="http://netbeans.org/downloads/">NetBeans</a> (Out of the box support for Maven)</br>
-                <a href="http://www.sublimetext.com/2">Sublime Text 2</a> (A good text editor)</br>
-            </p>
-
-        </div>
-
     </div>
 
     <!--/span-->

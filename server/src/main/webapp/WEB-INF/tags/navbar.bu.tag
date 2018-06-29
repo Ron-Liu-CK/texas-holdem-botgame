@@ -7,15 +7,9 @@
     <div class="navbar-inner">
         <div class="container">
             <a class="brand" href="#">
-                Nifty Topic Hour Challenge
+                Cygni Texas Hold'em
             </a>
             <ul class="nav">
-
-                <c:set var="currentClass"></c:set>
-                <c:if test="${section == 'challenge'}">
-                    <c:set var="currentClass">class="active"</c:set>
-                </c:if>
-                <li ${currentClass}><a href="/challenge">Join the Code Challenge</a></li>
 
                 <c:set var="currentClass"></c:set>
                 <c:if test="${section == 'rules'}">
@@ -27,8 +21,7 @@
                 <c:if test="${section == 'gettingstarted'}">
                     <c:set var="currentClass">class="active"</c:set>
                 </c:if>
-                <li ${currentClass}><a href="/gettingstarted">Clients</a></li>
-
+                <li ${currentClass}><a href="/gettingstarted">Getting started</a></li>
 
                 <c:set var="currentClass"></c:set>
                 <c:if test="${section == 'serverstatus'}">
@@ -42,6 +35,11 @@
                 </c:if>
                 <li ${currentClass}><a href="/showgame">Show games</a></li>
 
+                <c:set var="currentClass"></c:set>
+                <c:if test="${section == 'tournament'}">
+                    <c:set var="currentClass">class="active"</c:set>
+                </c:if>
+                <li ${currentClass}><a href="/tournament">Tournament</a></li>
             </ul>
         </div>
     </div>
