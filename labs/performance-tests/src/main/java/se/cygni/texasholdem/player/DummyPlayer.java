@@ -15,7 +15,7 @@ public class DummyPlayer extends BasicPlayer {
             .getLogger(DummyPlayer.class);
 
     private static final String DEFAULT_HOST = "localhost";
-    private static final int DEFAULT_PORT = 4711;
+    private static final int DEFAULT_PORT = 2376;
 
     private static final String HOST_PROPERTY = "host";
     private static final String PORT_PROPERTY = "port";

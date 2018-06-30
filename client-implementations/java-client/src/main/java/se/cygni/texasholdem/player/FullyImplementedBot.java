@@ -63,7 +63,7 @@ public class FullyImplementedBot implements Player {
      * @param args
      */
     public static void main(String... args) {
-        FullyImplementedBot bot = new FullyImplementedBot("poker.cygni.se", 4711);
+        FullyImplementedBot bot = new FullyImplementedBot("172.30.8.219", 2376);
 
         try {
             bot.playATrainingGame();
@@ -82,7 +82,8 @@ public class FullyImplementedBot implements Player {
      */
     @Override
     public String getName() {
-        throw new RuntimeException("Did you forget to specify a name for your bot (hint: your email address is a good idea)?");
+        return "ron-liu";
+//        throw new RuntimeException("Did you forget to specify a name for your bot (hint: your email address is a good idea)?");
     }
 
     /**
