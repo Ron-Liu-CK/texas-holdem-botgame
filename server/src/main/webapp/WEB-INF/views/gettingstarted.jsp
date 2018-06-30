@@ -53,17 +53,16 @@ Default locale: en_US, platform encoding: ANSI_X3.4-1968
 OS name: "linux", version: "3.5.2-linode45", arch: "i386", family: "unix"</pre>
 
                 <p>Download the example project:
-                    <a href="/download/texas-holdem-java-client-<spring:eval expression="@applicationProperties.getProperty('application.version')" />.zip">texas-holdem-java-client-<spring:eval
-                            expression="@applicationProperties.getProperty('application.version')"/></a>
+                    <a href="/resources/clients/holdem-bot-java-client.zip">texas-holdem-java-client</a>
                     Extract the zip.
                 </p>
  <pre class="prettyprint">
-> unzip texas-holdem-java-client-<spring:eval expression="@applicationProperties.getProperty('application.version')"/>.zip</pre>
+> unzip holdem-bot-java-client.zip</pre>
                 <p>
                     A simple test run with maven:
                 </p>
                     <pre class="prettyprint">
-> cd texas-holdem-java-client-<spring:eval expression="@applicationProperties.getProperty('application.version')"/>
+> cd holdem-bot-java-client
 > mvn compile exec:java -Dexec.mainClass="se.cygni.texasholdem.player.FullyImplementedBot"
 
 [INFO] Scanning for projects...
@@ -123,9 +122,7 @@ Caused by: java.lang.RuntimeException:
 
                 <h3>Setting Up Instructions</h3>
 
-                <p>The commands below illustrate how to run the example bot in node.js. See <a
-                        href="#nodejs_client_prereq">prerequisites</a> if
-                    something is missing in your setup.</p>
+                <p>The commands below illustrate how to run the example bot in node.js</p>
 
                 <p>The texas-holdem-nodejs-client is verified to work with node.js v0.8.8. Older and newer versions may
                     be okay.</p>
@@ -134,17 +131,17 @@ Caused by: java.lang.RuntimeException:
 v0.8.8</pre>
 
                 <p>Download the example project: <a
-                        href="/download/texas-holdem-nodejs-client-<spring:eval expression="@applicationProperties.getProperty('application.version')" />.zip">texas-holdem-nodejs-client-<spring:eval
-                        expression="@applicationProperties.getProperty('application.version')"/>.zip</a>
+                        href="/resources/clients/holdem-bot-nodejs-client.zip">texas-holdem-nodejs-client</a>
                 </p>
 
                 <p>Extract the zip</p>
                     <pre class="prettyprint">
-> unzip texas-holdem-nodejs-client-<spring:eval expression="@applicationProperties.getProperty('application.version')"/>.zip</pre>
+> unzip holdem-bot-nodejs-client.zip</pre>
 
                 <p>Do a test run:
 
                     <pre class="prettyprint">
+> cd holdem-bot-nodejs-client
 > node play.js
         throw new Error('Did you forget to specify your name? A good idea is t
               ^
