@@ -15,7 +15,7 @@ public class SystemSettings {
 
     public static final String PREFIX_PROPERTY = "texas.";
 
-    private int port = 2376;
+    private int port = 9915;
     private String host = "localhost";
 
     public SystemSettings() {

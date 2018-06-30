@@ -22,7 +22,7 @@ public class StatisticalBot extends BasicPlayer {
             .getLogger(StatisticalBot.class);
 
     private static final String DEFAULT_HOST = "localhost";
-    private static final int DEFAULT_PORT = 2376;
+    private static final int DEFAULT_PORT = 9915;
 
     private PlayerClient playerClient;
 

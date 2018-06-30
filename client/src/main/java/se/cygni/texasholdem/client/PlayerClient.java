@@ -42,7 +42,7 @@ import java.util.concurrent.TimeUnit;
 public class PlayerClient extends SimpleChannelHandler {
 
     private static final long RESPONSE_TIMEOUT_MS = 80000;
-    private static final long CONNECT_WAIT_MS = 1200;
+    private static final long CONNECT_WAIT_MS = 12000;
 
     private static Logger log = LoggerFactory.getLogger(PlayerClient.class);
 

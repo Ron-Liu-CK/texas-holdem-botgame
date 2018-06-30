@@ -21,7 +21,7 @@ public class PerformanceTestPlayer extends BasicPlayer {
             .getLogger(PerformanceTestPlayer.class);
 
     private static final String DEFAULT_HOST = "localhost";
-    private static final int DEFAULT_PORT = 2376;
+    private static final int DEFAULT_PORT = 9915;
     private static final String DEFAULT_NAME = "perftest";
     private static final int DEFAULT_NOOF_PLAYERS = 1;
 
