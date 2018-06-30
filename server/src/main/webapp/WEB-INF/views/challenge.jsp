@@ -43,7 +43,7 @@
                 <h2>Submit Your Code</h2>
                 <p>
                     You can implement your client either in Java or Node.js. Please go <a href="/gettingstarted">here</a>
-                    to download the simple client.</p>
+                    to download the example client.</p>
                     Make sure to go over the <a href="/rules">poker house rules</a> since it can affect
                     how you want to customize your client.
                 </p>
