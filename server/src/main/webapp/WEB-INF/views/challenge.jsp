@@ -1,6 +1,6 @@
 <div class="container">
     <div class="hero-unit">
-        <h1>Nifty Topic Hour Challenge</h1>
+        <h1>Let's Play Poker</h1>
     </div>
 
     <div class="row">
