@@ -163,6 +163,37 @@ Error: Did you forget to specify your name? A good idea is to use your e-mail as
             </div>
 
             <div class="well well-large">
+                <h2>Python client</h2>
+
+                <a name="nodejs_client_prereq"></a>
+
+                <h3>Prerequisites</h3>
+
+                <p>
+                    Download and install Python 2.7: <a href="https://www.python.org/downloads/release/python-2715/" target="_blank">Python 2.7</a>
+                </p>
+
+                <h3>Set Up Instructions</h3>
+
+                <p>Download the example project: <a
+                        href="/resources/clients/holdem-bot-python-client.zip">texas-holdem-python-client</a>
+                </p>
+
+                <p>Extract the zip</p>
+                <pre class="prettyprint">
+> unzip holdem-bot-python-client.zip</pre>
+
+                <p>Do a test run:
+
+                <pre class="prettyprint">
+> cd holdem-bot-python-client
+> python run_bot.py <spring:eval
+                        expression="@applicationProperties.getProperty('bot.host')"/> <spring:eval
+                        expression="@applicationProperties.getProperty('bot.port')"/>
+                </pre></p>
+            </div>
+
+            <div class="well well-large">
                 <h2>Additional Documentation</h2>
                 <Ul>
                     <li><a href="http://poker.cygni.se/mavensite/texas-holdem-client/apidocs/">http://poker.cygni.se/mavensite/texas-holdem-client/apidocs/</a></li>
