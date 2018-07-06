@@ -14,6 +14,7 @@
     <packaging>jar</packaging>
     <name>texas-holdem-java-client</name>
 
+
     <build>
         <plugins>
             <!-- Use this assembly to create standalone app -->
@@ -56,6 +57,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <targetJdk>1.7</targetJdk>
+        <exec.mainClass>se.cygni.texasholdem.player.FullyImplementedBot</exec.mainClass>
     </properties>
 
     <dependencies>

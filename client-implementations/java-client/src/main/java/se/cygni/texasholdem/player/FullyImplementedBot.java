@@ -63,7 +63,10 @@ public class FullyImplementedBot implements Player {
      * @param args
      */
     public static void main(String... args) {
-        FullyImplementedBot bot = new FullyImplementedBot("172.30.8.219", 9915);
+        String host = args[0];
+        int port = Integer.valueOf(args[1]);
+
+        FullyImplementedBot bot = new FullyImplementedBot(host, port);
 
         try {
             bot.playATrainingGame();

@@ -11,8 +11,7 @@
                 <h2>House rules</h2>
 
                 <p>
-                    A table will play until either a winner has been established, all players have quit,
-                    or a Player shuffle if is within a tournament.
+                    A table will play until either a winner has been established or all players have quit.
                 </p>
 
                 <p>
@@ -26,7 +25,7 @@
                 </p>
 
                 <p>
-                    Raises are always fixed to the current value of the big blind.
+                    Raises are always fixed to the current value of the big blind ($10).
                 </p>
 
                 <p>

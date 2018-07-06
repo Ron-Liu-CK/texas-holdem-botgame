@@ -2,6 +2,7 @@ package se.cygni.texasholdem;
 
 import org.springframework.stereotype.Component;
 import se.cygni.texasholdem.util.SystemFieldPopulator;
+import java.lang.*;
 
 /**
  * This class configures the system. All properties defined here must have
@@ -15,7 +16,7 @@ public class SystemSettings {
 
     public static final String PREFIX_PROPERTY = "texas.";
 
-    private int port = 9915;
+    private int defaultPort = 9915;
     private String host = "localhost";
 
     public SystemSettings() {
@@ -26,8 +27,14 @@ public class SystemSettings {
     }
 
     public int getPort() {
+        String botPort = System.getProperty("botPort");
+        if (botPort != null) {
+            int port = Integer.valueOf(botPort);
+            if (port > 0)
+                return port;
+        }
 
-        return port;
+        return this.defaultPort;
     }
 
     public String getHost() {
@@ -38,7 +45,7 @@ public class SystemSettings {
     @SuppressWarnings("unused")
     private void setPort(final int port) {
 
-        this.port = port;
+        this.defaultPort = port;
     }
 
     @SuppressWarnings("unused")

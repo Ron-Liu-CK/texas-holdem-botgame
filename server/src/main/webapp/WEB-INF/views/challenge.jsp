@@ -49,7 +49,7 @@
                 </p>
                 <p>
                     When ready, please email to <a href="mailto:ron.liu@creditkarma.com">ron.liu@creditkarma.com</a>
-                    with source code attached to the email or an URL I can download your client.
+                    with source code or a URL where I can download your client.
                 </p>
             </div>
         </div>

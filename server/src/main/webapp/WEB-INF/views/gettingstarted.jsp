@@ -34,7 +34,7 @@
                 </p>
 
 
-                <h3>Setting Up Instructions</h3>
+                <h3>Set Up Instructions</h3>
                 <p>You need to have a sane Java environment, version 6 or above is okay:</p>
                 <pre class="prettyprint">
 > java -version
@@ -63,7 +63,9 @@ OS name: "linux", version: "3.5.2-linode45", arch: "i386", family: "unix"</pre>
                 </p>
                     <pre class="prettyprint">
 > cd holdem-bot-java-client
-> mvn compile exec:java -Dexec.mainClass="se.cygni.texasholdem.player.FullyImplementedBot"
+> mvn compile exec:java -Dexec.args="<spring:eval
+                            expression="@applicationProperties.getProperty('bot.host')"/> <spring:eval
+                            expression="@applicationProperties.getProperty('bot.port')"/>"
 
 [INFO] Scanning for projects...
 [INFO]
@@ -120,7 +122,7 @@ Caused by: java.lang.RuntimeException:
                     Download and install node.js: <a href="http://nodejs.org/" target="_blank">node.js</a>
                 </p>
 
-                <h3>Setting Up Instructions</h3>
+                <h3>Set Up Instructions</h3>
 
                 <p>The commands below illustrate how to run the example bot in node.js</p>
 
@@ -142,7 +144,14 @@ v0.8.8</pre>
 
                     <pre class="prettyprint">
 > cd holdem-bot-nodejs-client
-> node play.js
+> node play.js <spring:eval
+                    expression="@applicationProperties.getProperty('bot.host')"/> <spring:eval
+                    expression="@applicationProperties.getProperty('bot.port')"/>
+            </pre></p>
+                <p>If seeing this error:
+
+                <pre class="prettyprint">
+
         throw new Error('Did you forget to specify your name? A good idea is t
               ^
 Error: Did you forget to specify your name? A good idea is to use your e-mail as username! </pre>

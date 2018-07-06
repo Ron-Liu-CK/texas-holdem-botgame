@@ -1,6 +1,7 @@
 require('./modules/sugar-1.3.min.js');
 
 function getName() {
+    return "__NiftyTopicHourNodeClient";
 	//return 'Nisse@manpower';
     throw new Error('Did you forget to specify your name? A good idea is to use your e-mail as username!');
 };
