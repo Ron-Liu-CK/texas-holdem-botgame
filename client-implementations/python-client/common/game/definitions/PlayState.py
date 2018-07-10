@@ -57,7 +57,7 @@ class PlayStateInstance:
         if name.upper() == "FLOP":
             return PlayStateInstance.FLOP
         if name.upper() == "TURN":
-            return PlayStateInstance.PRE_FLOP
+            return PlayStateInstance.TURN
         if name.upper() == "RIVER":
             return PlayStateInstance.RIVER
         if name.upper() == "SHOWDOWN":
