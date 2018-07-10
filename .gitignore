@@ -3,6 +3,7 @@
 *.data
 *.ser
 *.log
+*.pyc
 
 # Eclipse
 .settings
