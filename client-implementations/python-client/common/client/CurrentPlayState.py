@@ -246,9 +246,7 @@ class CurrentPlayState(object):
     #      
     def getInvestmentInPotFor(self, player):
         """ generated source for method getInvestmentInPotFor """
-        if self.potInvestmentPerPlayer.index(player) >= 0:
-            return 0
-        return self.potInvestmentPerPlayer.get(player)
+        return self.potInvestmentPerPlayer.get(player, 0)
 
     # 
     #      * Gives the total amount you have invested in the pot
